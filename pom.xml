@@ -14,6 +14,7 @@
   <inceptionYear>2001</inceptionYear>
   <modules>
     <module>cloud-provider-payment8001</module>
+      <module>cloud-consumer-order80</module>
   </modules>
 
   <distributionManagement>
@@ -111,6 +112,16 @@
           <locales>en,fr</locales>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <fork>true</fork>
+          <addResources>true</addResources>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 </project>
