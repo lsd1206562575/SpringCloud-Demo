@@ -11,6 +11,14 @@ spring:
     username: root
     password: Lsd19981221!
 
+eureka:
+  client:
+    #表示是否将自己注册EurekaServer 默认为true
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
 devtools:
   restart:
     enabled: true #是否支持热部署
